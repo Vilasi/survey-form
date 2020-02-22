@@ -1,0 +1,53 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+body {
+    background-image: url("images/background.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20% auto;
+    grid-template-areas: 
+    ". title ."
+    ". form ."
+    ;
+}
+
+#title {
+    grid-area: title;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+    
+}
+
+#title h1 {
+    color: white;
+    /* This creates a black outline for the title h1 element text */
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    
+}
+
+#form {
+    grid-area: form;
+    background-color: rgba(225, 179, 130, 0.5);
+    
+}
+
+#form form {
+    box-sizing: border-box;
+    margin-left: auto; margin-right: auto;
+    padding: 15px;
+    text-align: center;
+}
