@@ -6,37 +6,108 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet"> 
     <Title>Workout Survey</Title>
 </head>
 
 <body>
-
-    <div id="title">
-        <h1>Fitness Survey</h1>
-        <p>This survey will assess your general level of fitness</p>
-    </div>
-
-
-    <div id="form">
-        <form id="survey-form" method="GET">
-            <div>
-                <label for="test">This is a test</label>
-                <input type="text" name="test" placeholder="This is a test input"><br> 
-            </div>
-
-            <label for="radio-test">This is a radio button test</label><br>
-            Male: <input type="radio" name="radio-test" value="Male"><br>
-            Female: <input type="radio" name="radio-test" value="Female"><br>
-            AH-64 APACHE ATTACK HELICOPTER: <input type="radio" name="radio-test" value="AH-64 APACHE ATTACK HELICOPTER">
+    
+        <div id="title">
+            <h1>Do You Even Lift Bro?</h1>
+            <p>This survey will assess your general level of fitness</p>
+        </div>
 
 
+        <div id="form">
+            <form id="survey-form" method="GET">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" placeholder="Enter Your Name Here" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Enter Your Email Here" required>
+                </div>
+
+                <div>
+                    <label for="number">Age:</label>
+                    <input id="number" type="number" name="number" placeholder="Enter Your Age Here">
+                    
+
+                </div>
+
+                <div>
+                    <label for="dropdown">How many days a week do you exercise?</label><br>
+                    <select id="dropdown" name="dropdown" placeholder="Select Number of Days" autocomplete="off" required="">
+                        <option selected disabled hidden>Choose Number of Days</option>  
+                        <option value="1">1 Day Per Week</option>
+                        <option value="2">2 Days Per Week</option>
+                        <option value="3">3 Days Per Week</option>
+                        <option value="4">4 Days Per Week</option>
+                        <option value="5">5 Days Per Week</option>
+                        <option value="6">6 Days Per Week</option>
+                        <option value="7">7 Days Per Week</option>
+                    </select>
+                </div>
 
 
+                <div>
+                    <label for="radio-test">Gender:</label><br>
+                    Male: <input type="radio" name="radio-test" value="Male"><br>
+                    Female: <input type="radio" name="radio-test" value="Female"><br>
+                    Other:  <input type="radio" name="radio-test" value="Other">
+                </div>
 
-        </form>
+                <div id="checkbox">
+                    <p>Which forms of exercise do you regularly engage in?</p>
+                    <label>
+                        <input type="checkbox" name="weights">Weight Lifting
+                    </label>
+                        
 
-    </div>
+                    <label>
+                            <input type="checkbox" name="run">Running
+                    </label>
 
+                    <label>
+                            <input type="checkbox" name="walk">Walk
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="run">Running
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="hike">Hike
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="swim">Swim
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="dance">Dance
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="aerobics">Aerobics
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="yoga">Yoga
+                    </label>
+
+                    <label>
+                            <input type="checkbox" name="sport">Team Sport
+                    </label>
+                </div>
+
+
+            </form>
+
+        </div>
+    
 
 
 
