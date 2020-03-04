@@ -12,7 +12,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Trade Winds', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: minmax(10%, auto-fit) auto;
@@ -20,6 +20,10 @@ body {
     ". title ."
     ". form ."
     ;
+}
+
+#form {
+    margin: 50px 0 50px 0;
 }
 
 div#form form > div {
@@ -37,7 +41,7 @@ div#form form > div {
 }
 
 #title h1 {
-    color: red;
+    color: white;
     /* This creates a black outline for the title h1 element text */
     font-size: 3.5rem;
     text-shadow:
@@ -50,6 +54,7 @@ div#form form > div {
 
 #title p {
     color: white;
+    font-size: 1.3rem;
     text-shadow:
     -1px -1px 0 #000,  
      1px -1px 0 #000,
@@ -59,7 +64,16 @@ div#form form > div {
 
 #form {
     grid-area: form;
-    background-color: rgba(225, 179, 130, 0.5);
+    /* background-color: rgba(225, 179, 130, 0.5); */
+    background-color: rgba(192, 192, 192, 0.9);
+    color:black;
+    /* text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white; */
+    
+    
     
 }
 
@@ -70,6 +84,17 @@ div#form form > div {
     text-align: center;
 }
 
-#checkbox {
-    display: block;
+#checkbox label {
+    display: flex;
+    align-items: center;
+}
+
+.textarea {
+    text-align: left;
+
+}
+
+#textarea {
+    min-height: 125px;
+    width: 100%;
 }

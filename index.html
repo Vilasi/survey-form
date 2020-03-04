@@ -6,17 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
     <Title>Workout Survey</Title>
 </head>
 
 <body>
     
         <div id="title">
-            <h1>Do You Even Lift Bro?</h1>
+            <h1>Fitness Survey</h1>
             <p>This survey will assess your general level of fitness</p>
         </div>
-
+        
 
         <div id="form">
             <form id="survey-form" method="GET">
@@ -53,10 +53,11 @@
 
 
                 <div>
-                    <label for="radio-test">Gender:</label><br>
-                    Male: <input type="radio" name="radio-test" value="Male"><br>
-                    Female: <input type="radio" name="radio-test" value="Female"><br>
-                    Other:  <input type="radio" name="radio-test" value="Other">
+                    <label for="radio-test">Gender:</label>
+                    <label for="radio-test"><input type="radio" name="radio-test" value="Male">Male:</label>
+                    <label for="radio-test"><input type="radio" name="radio-test" value="Female">Female:</label>
+                    <label for="radio-test"><input type="radio" name="radio-test" value="Other">Other:</label>
+                    
                 </div>
 
                 <div id="checkbox">
@@ -71,7 +72,7 @@
                     </label>
 
                     <label>
-                            <input type="checkbox" name="walk">Walk
+                            <input type="checkbox" name="walk">Walking
                     </label>
 
                     <label>
@@ -79,11 +80,11 @@
                     </label>
 
                     <label>
-                            <input type="checkbox" name="hike">Hike
+                            <input type="checkbox" name="hike">Hiking
                     </label>
 
                     <label>
-                            <input type="checkbox" name="swim">Swim
+                            <input type="checkbox" name="swim">Swimming
                     </label>
 
                     <label>
@@ -101,6 +102,11 @@
                     <label>
                             <input type="checkbox" name="sport">Team Sport
                     </label>
+                </div>
+
+                <div class="textarea">
+                    <p>If you have any opinions you can shove em up your ass</p>
+                    <textarea id="textarea" name="comment" placeholder="get fucked, jackass"></textarea>
                 </div>
 
 
