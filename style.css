@@ -24,6 +24,7 @@ body {
 
 #form {
     margin: 50px 0 50px 0;
+    
 }
 
 div#form form > div {
@@ -35,8 +36,17 @@ div#form form > div {
 
 #title {
     grid-area: title;
-    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin: 0 auto;
+    
     text-align: center;
+    /*
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    */
     
 }
 
@@ -44,22 +54,29 @@ div#form form > div {
     color: white;
     /* This creates a black outline for the title h1 element text */
     font-size: 3.5rem;
+    
     text-shadow:
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px  1px 0 #000,
     1px  1px 0 #000;
     
+    
 }
 
 #title p {
     color: white;
     font-size: 1.3rem;
+    
+    display: inline-block;
+    margin: 0 auto;
+    /*
     text-shadow:
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+     */
 }
 
 #form {
@@ -84,9 +101,36 @@ div#form form > div {
     text-align: center;
 }
 
-#checkbox label {
+#name, #email, #age {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.text-input {
+    font-size: 1.25rem;
+}
+
+#dropdown-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#dropdown-div select {
+    font-size: 1.25rem;
+}
+
+#radio-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#checkbox-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .textarea {
@@ -95,6 +139,6 @@ div#form form > div {
 }
 
 #textarea {
-    min-height: 125px;
+    min-height: 100px;
     width: 100%;
 }
