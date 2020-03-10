@@ -14,7 +14,7 @@
     
         <div id="title">
             <h1>Fitness Survey</h1>
-            <p>This survey will assess your level of fitness</p>
+            <p>Thank you for your participation</p>
         </div>
         
 
@@ -32,7 +32,7 @@
 
                 <div id="age">
                     <label for="number">Age</label>
-                    <input class="text-input" id="number" type="number" name="number" placeholder="Age">
+                    <input class="text-input" id="number" type="number" name="number" min="18" max="99" placeholder="Age">
                     
 
                 </div>
@@ -75,9 +75,6 @@
                             <input type="checkbox" name="walk">Walking
                     </label>
 
-                    <label>
-                            <input type="checkbox" name="run">Running
-                    </label>
 
                     <label>
                             <input type="checkbox" name="hike">Hiking
@@ -107,6 +104,10 @@
                 <div class="textarea">
                     <p>Please tell us why you decided to start exercising</p>
                     <textarea id="textarea" name="comment" placeholder="500 Character Limit" maxlength="500"></textarea>
+                </div>
+
+                <div id="button-div">
+                    <button id="submit" type="submit">Submit</button>
                 </div>
 
 
