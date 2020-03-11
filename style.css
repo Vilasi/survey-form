@@ -3,7 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -22,10 +22,7 @@ body {
     ;
 }
 
-#form {
-    margin: 50px 0 50px 0;
-    
-}
+
 
 div#form form > div {
     box-sizing: border-box;
@@ -83,6 +80,7 @@ div#form form > div {
     grid-area: form;
     /* background-color: rgba(225, 179, 130, 0.5); */
     background-color: rgba(192, 192, 192, 0.9);
+    margin: 50px 0 50px 0;
     color:black;
     /* text-shadow:
     -1px -1px 0 white,  
@@ -166,4 +164,179 @@ div#form form > div {
 #submit:active {
 	position:relative;
 	top:1px;
+}
+
+
+
+/*****    Styling for Small Phone Screens     *****/
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url("images/background.jpeg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "form"
+        ;
+    }
+    
+    
+    #form#surveyform {
+        margin: 0 auto;
+    }
+    div#form form > div {
+        box-sizing: border-box;
+        margin: 0 auto;
+        /* padding: 10px 25px; /*
+        font-size: 1.25rem;
+    }
+    
+    #title {
+        grid-area: title;
+        display: inline-flex;
+        flex-direction: column;
+        
+        width: 100%;
+        margin: 0 auto;
+        
+        text-align: center;
+        
+        /* overflow-wrap: break-word;
+        word-wrap: break-word; */
+        
+        
+    }
+    
+    #title h1 {
+        color: white;
+        /* This creates a black outline for the title h1 element text */
+        font-size: 2.5rem;
+
+        word-break: break-all;
+        
+        text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+        
+        
+    }
+    
+    #title p {
+        color: white;
+        font-size: 1.3rem;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        
+        display: inline-block;
+        margin: 0 auto;
+        /*
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+         */
+    }
+    
+    #form {
+        grid-area: form;
+        /* background-color: rgba(225, 179, 130, 0.5); */
+        background-color: rgba(192, 192, 192, 0.9);
+        color:black;
+        margin: 50px 0 50px 0;
+        /* text-shadow:
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white; */
+        
+        
+        
+    }
+    
+    #form form {
+        box-sizing: border-box;
+        margin-left: auto; margin-right: auto;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    #name, #email, #age {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .text-input {
+        font-size: 1.25rem;
+    }
+    
+    #dropdown-div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    #dropdown-div select {
+        font-size: 1.25rem;
+    }
+    
+    #radio-div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #checkbox-div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .textarea {
+        text-align: left;
+    
+    }
+    
+    #textarea {
+        min-height: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #submit {
+        box-shadow:inset 0px 1px 0px 0px #ffffff;
+        background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+        background-color:#ffffff;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#666666;
+        /* font-family:Arial; */
+        font-size:15px;
+        font-weight:bold;
+        padding:8px 25px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+    }
+    #submit:hover {
+        background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+        background-color:#f6f6f6;
+    }
+    #submit:active {
+        position:relative;
+        top:1px;
+    }
+
+
 }
